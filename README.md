@@ -23,4 +23,4 @@ The assignment was to build a "Happy Thoughts" messaging app using React. The co
 
 ## View it live
 
-🔗 [Click here to view the live project on Cloudflare](KLISTRA_IN_DIN_CLOUDFLARE_LÄNK_HÄR)
+🔗 [Click here to view the live project on Cloudflare](https://technigo-project-happy-thoughts.bergalou.workers.dev)
