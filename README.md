@@ -1,24 +1,26 @@
 # Happy Thoughts
 
-Replace this readme with your own information about the project. You can include things like:
+This is a React web application where users can share their happy thoughts and like thoughts shared by others. The project connects to a public API to fetch, post, and update data in real-time.
 
-- Brief description of the assignment
-- How you approached the task, what tools and techniques you used, and how you planned it
-- If you had more time, what would be next?
-- How to run the project locally
+## Project Description
+
+The assignment was to build a "Happy Thoughts" messaging app using React. The core goals were to practice state management, lifting state up, components, and handling asynchronous API requests (`GET` and `POST`).
+
+## How I Approached the Task
+
+- **Planning:** I started by breaking the UI into reusable components (`ThoughtForm` and `ThoughtList`) to keep the code clean and structured.
+
+- **Data Handling:** I tested the API endpoints using Postman first to understand the data structure (`message`, `hearts`, `createdAt`).
+
+- **State Management:** I implemented a loading state while fetching data, and used an optimistic-style state update when submitting new thoughts so they appear instantly without reloading the entire list.
+
+- **Styling:** I followed the provided design specifications, creating a bold "retro-block" look using CSS borders and hard `box-shadow` values, along with a dynamic character counter that alerts the user if the text is too long.
+
+## If I Had More Time, I Would:
+
+- Add a feature to let users see how many unique posts _they_ have liked using `localStorage`.
+- Implement smooth CSS animations when a new thought is added to the list.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
 
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+🔗 [Click here to view the live project on Cloudflare](KLISTRA_IN_DIN_CLOUDFLARE_LÄNK_HÄR)

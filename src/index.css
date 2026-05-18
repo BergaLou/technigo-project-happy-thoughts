@@ -11,3 +11,108 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.main-container {
+  max-width: 30rem;
+  margin: 2.5rem auto;
+  padding: 0 1.2rem;
+}
+
+.thought-form, .thought-card {
+  background-color: #f2f0f0;
+  border: 0.1rem solid #000000;
+  padding: 0.2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0.5rem 0.5rem 0rem 0rem #000000;
+}
+
+.thought-form p {
+  font-size: 1.2rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.thought-form textarea {
+  width: 90%;
+  height: 3rem;
+  padding: 0.5rem;
+  resize: none;
+  font-family: inherit;
+}
+
+.form-info {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.thought-form button{
+  background-color: #ffb3b3;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.thought-form button:disabled {
+  background-color: #eaeaea;
+  cursor: not-allowed;
+}
+
+.thought-message {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.thought-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.like-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.no-hearts {
+  background-color: #eaeaea;
+  border-radius: 50%;
+  border: none;
+  width: 2.8rem;
+  height: 2.8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.has-hearts {
+  background-color: #ffb3b3;
+  border-radius: 50%;
+  border: none;
+  width: 2.8rem;
+  height: 2.8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thought-date {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+.red-text {
+  color: #ff0000;
+  font-weight: bold;
+}
