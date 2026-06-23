@@ -22,7 +22,7 @@ export const ThoughtList = ({ thoughts, setThoughts }) => {
     }
 
     const handleLike = (thoughtId) => {
-        fetch(`https://bergalou-project-happy-thoughts-api.onrender.com/thoughts/${thoughtId}/like`, {
+        fetch(`https://bergalou-project-happy-thoughts-api.onrender.com/thoughts${thoughtId}/like`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
         })
