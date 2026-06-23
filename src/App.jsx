@@ -11,7 +11,7 @@ export const App = () => {
   
   const fetchThoughts = () => {
     setLoading(true)
-    fetch(`https://bergalou-project-happy-thoughts-api.onrender.com/thoughts`)
+    fetch(`https://bergalou-project-happy-thoughts-api.onrender.com/thoughts/`)
     .then((res) => res.json())
     .then((data) => {
       setThoughts(data)

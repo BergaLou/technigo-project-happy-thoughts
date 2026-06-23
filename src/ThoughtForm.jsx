@@ -12,7 +12,7 @@ export const ThoughtForm = ({ onNewThought }) => {
             return
         }
 
-        fetch(`https://bergalou-project-happy-thoughts-api.onrender.com/thoughts`, {
+        fetch(`https://bergalou-project-happy-thoughts-api.onrender.com/thoughts/`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ 
