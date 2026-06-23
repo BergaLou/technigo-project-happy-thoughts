@@ -10,15 +10,20 @@ export const ThoughtForm = ({ onNewThought }) => {
             return
         }
 
-        fetch(`https://happy-thoughts-api-4ful.onrender.com/thoughts`, {
+        fetch(`https://bergalou-project-happy-thoughts-api.onrender.com/thoughts`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ message: newThought }),
+            body: JSON.stringify({ 
+                message: newThought,
+                category: category,
+                name: name 
+            }),
         })
         .then((res) => res.json())
         .then((createdThought) => {
             onNewThought(createdThought)
             setNewThought("")
+            setName("")
         })
         .catch((err) => console.error("cant save..", err))
     }
@@ -31,6 +36,19 @@ export const ThoughtForm = ({ onNewThought }) => {
             value={newThought}
             onChange={(e) => setNewThought(e.target.value)}
             />
+
+            <select value={category} onChange={(e) => setCategory(e.target.value)}>
+                <option value="Random">Random</option>
+                <option value="Friends">Friends</option>
+                <option value="Family">Family</option>
+            </select>
+
+            <input
+                type="text"
+                placeholder="Your name (optional)"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                />
 
             <div className="form-info">
             <p className={newThought.length > 140 ? "red-text" : ""}>

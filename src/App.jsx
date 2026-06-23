@@ -5,10 +5,13 @@ import { ThoughtList } from "./ThoughtList";
 export const App = () => {
   const [thoughts, setThoughts] = useState([])
   const [loading, setLoading] = useState(true)
+  const [message, setMessage] = useState('')
+  const [category, setCategory] = useState('Project')
+  const [name, setName] = useState('')
   
   const fetchThoughts = () => {
     setLoading(true)
-    fetch(`https://happy-thoughts-api-4ful.onrender.com/thoughts`)
+    fetch(`https://bergalou-project-happy-thoughts-api.onrender.com/thoughts`)
     .then((res) => res.json())
     .then((data) => {
       setThoughts(data)
