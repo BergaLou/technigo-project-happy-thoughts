@@ -2,6 +2,8 @@ import { useState } from "react";
 
 export const ThoughtForm = ({ onNewThought }) => {
     const [newThought, setNewThought] = useState("")
+    const [category, setCategory] = useState("Random")
+    const [name, setName] = useState("")
     const handleSubmit = (event) => {
         event.preventDefault()
 
